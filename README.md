@@ -32,6 +32,19 @@ pull(
 )
 ```
 
+or, concat and parse as JSON.
+
+``` js
+var Concat = require('pull-concat/json')
+pull(
+  source_data,
+  Concat(function (err, obj) {
+    if(err) throw err
+    console.log(obj)
+  })
+)
+```
+
 ## License
 
 MIT
