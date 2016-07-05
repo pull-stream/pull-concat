@@ -15,6 +15,10 @@ pull(
 )
 ```
 
+This will handle `utf8` characters correctly,
+using [pull-utf8-decoder](http://npm.im/pull-utf8-decoder)
+internally.
+
 or, concat as a buffer
 
 ``` js
